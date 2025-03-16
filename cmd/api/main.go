@@ -6,7 +6,7 @@ import (
 
 	"github.com/go-chi/chi"
 	log "github.com/sirupsen/logrus"
-	"github.com/timooo-thy/go_tutorial/internal/handlers"
+	"github.com/timooo-thy/go_tutorial/cmd/internal/handlers"
 )
 
 func main(){
