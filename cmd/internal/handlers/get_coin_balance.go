@@ -31,8 +31,7 @@ func GetCoinBalance(w http.ResponseWriter, r *http.Request){
 		return
 	}
 
-	var tokenDetails *tools.CoinDetails
-	tokenDetails = (*database).GetUserCoins(params.Username)
+	var tokenDetails *tools.CoinDetails = (*database).GetUserCoins(params.Username)
 	if tokenDetails == nil {
 		log.Error("User not found.")
 		api.InternalErrorHandler(w)
